@@ -4,4 +4,14 @@
  * See: https://www.gatsbyjs.org/docs/node-apis/
  */
 
-// You can delete this file if you're not using it
+const testData = {
+  name: 'Foo'
+};
+
+module.exports.createPages = async ({ actions: { createPage } }) => {
+  createPage({
+    path: '/test',
+    component: require.resolve('./src/templates/test.js'),
+    context: { testData }
+  });
+};
