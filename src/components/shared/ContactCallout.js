@@ -59,10 +59,10 @@ const ContactCallout = () => (
             <p>By Appointment Only</p>
             <ButtonGroup>
               <StyledButtonMain as="a" href="tel:+1-818-881-8410">
-                <FaPhone style={{ marginRight: '.5rem', verticalAlign: 'middle' }} /> for Appointment
+                <FaPhone style={{ marginRight: '.5rem', verticalAlign: 'middle' }} /> Call Us
               </StyledButtonMain>
               <StyledButtonMain as="a" href="mailto:randy@elitedetailshop.com">
-                <FaEnvelope style={{ marginRight: '.5rem', verticalAlign: 'middle' }} /> for Appointment
+                <FaEnvelope style={{ marginRight: '.5rem', verticalAlign: 'middle' }} /> Email Us
               </StyledButtonMain>
             </ButtonGroup>
           </StyledCenter>
