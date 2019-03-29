@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
+import { FaFacebookSquare, FaInstagram, FaYelp } from 'react-icons/fa';
 import Wrapper from './shared/Wrapper';
 import { StyledRow, StyledColumn } from './shared/Grid';
 
@@ -14,7 +15,8 @@ const StyledFooterNav = styled.div`
     padding: 2rem 1rem;
   }
   h3 {
-    color: #fff;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.6rem;
     margin: 0 0 1rem;
   }
   ul {
@@ -25,21 +27,40 @@ const StyledFooterNav = styled.div`
   li {
     margin-bottom: 0.5rem;
     > a {
-      color: rgba(255, 255, 255, 0.8);
+      color: rgba(255, 255, 255, 0.6);
       text-decoration: none;
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+
+  .social-icons {
+    li {
+      display: inline-block;
+      margin-right: 1rem;
+      font-size: 3rem;
+
+      svg {
+        transition: fill 200ms ease;
+        &:hover {
+          fill: #fff;
+        }
+      }
     }
   }
 `;
 
 const StyledFooterLegal = styled.div`
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.5);
 `;
 
 const renderFooterContent = () => (
   <Wrapper>
     <StyledRow>
-      <StyledColumn w={3}>
+      <StyledColumn width={3}>
         <StyledFooterNav>
           <h3>Navigation</h3>
           <ul>
@@ -48,32 +69,56 @@ const renderFooterContent = () => (
             </li>
             <li>
               <Link to="/about">About</Link>
+            </li>
+            <li>
+              <Link to="/services">Services</Link>
+            </li>
+            <li>
+              <Link to="/contact">Contact Us</Link>
             </li>
           </ul>
         </StyledFooterNav>
       </StyledColumn>
-      <StyledColumn w={3}>
+      <StyledColumn width={3}>
         <StyledFooterNav>
-          <h3>Navigation</h3>
+          <h3>Services</h3>
           <ul>
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/services/dent-removal">Dent Removal</Link>
             </li>
             <li>
-              <Link to="/about">About</Link>
+              <Link to="/services/bumper-repair">Bumper Repair</Link>
+            </li>
+            <li>
+              <Link to="/services/wheel-repair">Wheel Repair</Link>
+            </li>
+            <li>
+              <Link to="/services/headlight-restoration">Headlight Restoration</Link>
+            </li>
+            <li>
+              <Link to="/services/glass-repair">Glass Repair</Link>
             </li>
           </ul>
         </StyledFooterNav>
       </StyledColumn>
-      <StyledColumn w={3}>
+      <StyledColumn width={3}>
         <StyledFooterNav>
-          <h3>Navigation</h3>
-          <ul>
+          <h3>Social</h3>
+          <ul className="social-icons">
             <li>
-              <Link to="/">Home</Link>
+              <a href="https://www.facebook.com">
+                <FaFacebookSquare />
+              </a>
             </li>
             <li>
-              <Link to="/about">About</Link>
+              <a href="https://www.instagram.com">
+                <FaInstagram />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.yelp.com">
+                <FaYelp />
+              </a>
             </li>
           </ul>
         </StyledFooterNav>
