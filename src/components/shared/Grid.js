@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-function getWidth({ width }) {
+function setWidth({ width }) {
   switch (width) {
     case 2:
       return '50%';
@@ -12,24 +12,26 @@ function getWidth({ width }) {
   }
 }
 
-function getGutter({ spacing }) {
+function setGutter({ spacing }) {
   return spacing ? `${spacing}rem` : '3rem';
 }
 
 const StyledRow = styled.div`
   display: flex;
+  flex-wrap: wrap;
   @media only screen and (max-width: 767px) {
     flex-direction: column;
   }
 `;
 
 const StyledColumn = styled.div`
-  flex: 1;
-  width: ${getWidth};
-  margin-right: ${getGutter};
+  flex: 0 0 ${setWidth};
+  padding-right: ${setGutter};
+  margin-bottom: 2rem;
   @media only screen and (max-width: 767px) {
-    margin-right: 0;
+    padding-right: 0;
     width: 100%;
+    margin-bottom: 1rem;
   }
 `;
 

@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import styled from 'styled-components';
 import Typed from 'typed.js';
-import { StyledButtonTransparent } from '../shared/Button';
+import { StyledButtonMain } from '../shared/Button';
 import SplashBackgroundImage from '../../images/hero-splash.jpg';
 
 const StyledTyped = styled.span`
@@ -84,9 +84,9 @@ const HeroSplash = ({ title, text }) => {
           <p>
             We offer high quality <StyledTyped ref={typedElement} />
           </p>
-          <StyledButtonTransparent style={{ marginTop: '2rem', maxWidth: '270px' }} large as="a">
+          <StyledButtonMain style={{ marginTop: '2rem', maxWidth: '270px' }} large as="a">
             Check Out Our Services
-          </StyledButtonTransparent>
+          </StyledButtonMain>
         </section>
       </StyledHeroSplash>
     </React.Fragment>
