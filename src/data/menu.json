@@ -1,0 +1,31 @@
+[
+  {
+    "id": 1,
+    "title": "Home",
+    "url": "/",
+    "submenu": null
+  },
+  {
+    "id": 2,
+    "title": "Services",
+    "url": "/Services",
+    "submenu": [
+      {
+        "id": 1,
+        "title": "Dent Removal",
+        "url": "/services/dent-removal"
+      },
+      {
+        "id": 2,
+        "title": "Bumper Repair",
+        "url": "/services/bumper-repair"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "About",
+    "url": "/about",
+    "submenu": null
+  }
+]
