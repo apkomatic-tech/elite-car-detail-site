@@ -36,6 +36,12 @@ const GlobalStyle = createGlobalStyle`
 
   }
 
+  /* responsive images */
+  img {
+    width: 100%;
+    height: auto;
+  }
+
 `;
 
 const Layout = ({ children, isLandingPage }) => (

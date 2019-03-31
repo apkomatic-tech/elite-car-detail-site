@@ -6,9 +6,13 @@ const StyledButton = styled.button`
   text-align: center;
   cursor: pointer;
   font-size: 1.6rem;
+  line-height: 1.6rem;
   display: ${props => (props.block ? 'block' : 'inline-block')};
   width: ${props => (props.block ? '100%' : 'auto')};
   text-decoration: none;
+  & > * {
+    vertical-align: middle;
+  }
 `;
 
 function mainColor(props) {
