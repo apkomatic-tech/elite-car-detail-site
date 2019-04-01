@@ -4,9 +4,13 @@ import { FaPhone, FaEnvelope } from 'react-icons/fa';
 import Wrapper from './Wrapper';
 import { StyledButtonMain } from './Button';
 import { StyledRow, StyledColumn } from './Grid';
+import SplashBackgroundImage from '../../images/contact-callout-bg-splash.jpg';
 
 const StyledCallout = styled.div`
-  background: #111;
+  background-color: #111;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(${SplashBackgroundImage});
+  background-size: cover;
+  background-position: center;
   padding: 4rem 0;
   @media only screen and (max-width: 767px) {
     padding: 2rem 0;
@@ -14,9 +18,13 @@ const StyledCallout = styled.div`
 `;
 
 const StyledCenter = styled.div`
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: rgba(0, 0, 0, 0.15);
   padding: 2rem 1.5rem;
   height: 100%;
+  transition: background 300ms linear;
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.35);
+  }
 
   h3 {
     margin-top: 0;

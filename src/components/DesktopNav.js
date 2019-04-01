@@ -21,10 +21,17 @@ const StyledNav = styled.ul`
       display: block;
       text-decoration: none;
       padding: 1rem;
+      &.active {
+        color: #7c61ea;
+      }
+    }
+
+    &:not(.nav-dropdown) {
+      border-bottom: 3px solid transparent;
       &.active,
       &:hover,
       &:focus {
-        background: ${props => props.theme.colors.main};
+        border-color: #7c61ea;
       }
     }
   }

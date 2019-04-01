@@ -7,8 +7,6 @@ import SplashBackgroundImage from '../../images/hero-splash.jpg';
 const StyledTyped = styled.span`
   white-space: pre;
   display: inline-block;
-  /* border-bottom: 3px solid #fff; */
-  /* height: 100%; */
   position: relative;
   z-index: 1;
   &::after {
@@ -25,7 +23,7 @@ const StyledTyped = styled.span`
 `;
 const StyledHeroSplash = styled.div`
   min-height: 600px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(${SplashBackgroundImage});
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.65)), url(${SplashBackgroundImage});
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

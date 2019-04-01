@@ -7,6 +7,7 @@ import Footer from './footer';
 
 const globalTheme = {
   colors: {
+    dark: '#1f2331',
     main: '#41337a',
     mainLight: '#5946a7'
   },
@@ -31,7 +32,7 @@ const GlobalStyle = createGlobalStyle`
     line-height: 1.5;
     font-size: 1.5rem;
     font-family: 'Open Sans', sans-serif;
-    background: #313131;
+    background: ${props => props.theme.colors.dark};
     color: #fff;
 
   }
