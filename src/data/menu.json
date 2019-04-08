@@ -8,22 +8,27 @@
   {
     "id": 2,
     "title": "Services",
-    "url": "/Services",
+    "url": "/services",
     "submenu": [
       {
         "id": 1,
-        "title": "Dent Removal",
-        "url": "/services/dent-removal"
+        "title": "Exterior Detailing",
+        "url": "/services/exterior-detailing"
       },
       {
         "id": 2,
-        "title": "Bumper Repair",
+        "title": "Interior Detail",
         "url": "/services/bumper-repair"
       }
     ]
   },
   {
     "id": 3,
+    "title": "Detailing",
+    "url": "/detailing-info"
+  },
+  {
+    "id": 4,
     "title": "About",
     "url": "/about",
     "submenu": null

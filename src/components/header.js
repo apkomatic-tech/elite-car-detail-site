@@ -6,6 +6,7 @@ import { FaBars } from 'react-icons/fa';
 import menuJSON from '../data/menu.json';
 import DesktopNav from './DesktopNav';
 import MobileNav from './MobileNav';
+import Logo from '../images/logo.gif';
 
 const StyledHeader = styled.header`
   background: ${props => (props.fixed ? 'transparent' : '#111')};
@@ -80,12 +81,14 @@ const Header = ({ fixed }) => {
       <StyledHeaderWrapper>
         <h1 className="logo">
           <Link to="/">
-            <span className="p1">Elite</span>
-            <span className="p2">
-              Detail
-              <br />
-              Shop
-            </span>
+            <img
+              src={Logo}
+              style={{
+                width: '90px',
+                height: '90px'
+              }}
+              alt="Elite Motocar Polishing"
+            />
           </Link>
         </h1>
         <StyledNavToggle onClick={openMenu}>

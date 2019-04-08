@@ -21,7 +21,9 @@ const StyledNav = styled.ul`
       display: block;
       text-decoration: none;
       padding: 1rem;
-      &.active {
+      &.active,
+      &:hover,
+      &:focus {
         color: #7c61ea;
       }
     }
@@ -44,33 +46,37 @@ const StyledNav = styled.ul`
     &:hover > ul {
       opacity: 1;
       pointer-events: auto;
+      transform: translateY(0);
     }
 
     > ul {
-      min-width: 150px;
+      width: 100%;
+      min-width: 195px;
       list-style: none;
       padding: 15px 25px;
       margin: 0;
       position: absolute;
-      left: 0;
+      right: 0;
       top: 100%;
+      transform: translateY(30px);
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.25);
 
-      background-color: #fff;
+      background-color: ${props => props.theme.colors.main};
       box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
       opacity: 0.01;
       pointer-events: none;
-      transition: 150ms ease;
+      transition: 220ms cubic-bezier(0.51, -0.02, 0.32, 1.07);
       border-radius: 4px;
       &::before {
         content: '';
         display: block;
         position: absolute;
         bottom: 100%;
-        left: 25px;
+        right: 35px;
         border-left: 8px solid transparent;
         border-right: 8px solid transparent;
         border-top: 8px solid transparent;
-        border-bottom: 8px solid #fff;
+        border-bottom: 8px solid ${props => props.theme.colors.main};
       }
       li {
         margin-bottom: 1rem;
@@ -78,10 +84,10 @@ const StyledNav = styled.ul`
       a {
         display: block;
         border-bottom: 1px;
-        color: #111;
+        color: rgba(255, 255, 255, 0.8);
         text-decoration: none;
         &:hover {
-          color: ${props => props.theme.colors.main};
+          color: #fff;
         }
       }
     }

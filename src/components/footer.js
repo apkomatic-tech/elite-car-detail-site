@@ -11,6 +11,7 @@ const StyledFooter = styled.div`
 
 const StyledFooterNav = styled.div`
   padding: 3rem 1rem;
+  color: rgba(255, 255, 255, 0.6);
   @media only screen and (max-width: 690px) {
     padding: 2rem 1rem;
   }
@@ -48,6 +49,21 @@ const StyledFooterNav = styled.div`
         }
       }
     }
+  }
+`;
+
+const StyledYelpLink = styled.a`
+  padding: 1rem;
+  width: 100%;
+  display: block;
+  background-color: #d32323;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  transition: background 200ms linear;
+  &:hover,
+  &:focus {
+    background-color: #dc4f4f;
   }
 `;
 
@@ -103,24 +119,19 @@ const renderFooterContent = () => (
       </StyledColumn>
       <StyledColumn width={3}>
         <StyledFooterNav>
-          <h3>Social</h3>
-          <ul className="social-icons">
-            <li>
-              <a href="https://www.facebook.com">
-                <FaFacebookSquare />
-              </a>
-            </li>
-            <li>
-              <a href="https://www.instagram.com">
-                <FaInstagram />
-              </a>
-            </li>
-            <li>
-              <a href="https://www.yelp.com">
-                <FaYelp />
-              </a>
-            </li>
-          </ul>
+          <h3>Contact</h3>
+          <address>
+            6924 Canby Ave., Ste. 110,
+            <br />
+            Reseda, CA 91335 <br />
+            (Directly behind USA Fitness on Hart St.)
+          </address>
+          <p>
+            Tue - Sat: <strong>8:30am - 6:00pm</strong>
+          </p>
+          <StyledYelpLink href="https://www.yelp.com/biz/elite-motorcar-polishing-reseda">
+            <FaYelp /> Review us on Yelp
+          </StyledYelpLink>
         </StyledFooterNav>
       </StyledColumn>
     </StyledRow>

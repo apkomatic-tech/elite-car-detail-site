@@ -11,6 +11,10 @@ import DentRemovalImage from '../../images/services-dent-removal.jpg';
 
 const StyledServicesWrapper = styled.div`
   margin: 3rem 0;
+  @media only screen and (max-width: 767px) {
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
   h1 {
     margin: 0 0 3rem;
   }
@@ -20,11 +24,12 @@ const StyledServiceBucket = styled.div`
   background: rgba(255, 255, 255, 0.1);
   transition: 500ms ease;
   &:hover {
-    transform: translateY(1%);
+    /* transform: translateY(1%); */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   }
 
   &:hover .header img {
-    transform: scale(1.4) rotate(5deg);
+    transform: scale(1.3) rotate(2deg);
   }
 
   .header {

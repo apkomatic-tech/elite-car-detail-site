@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Elite Motocar Polishing`,
+    title: `Elite Detail Shop`,
     description: `Our experienced professionals use only the finest quality products to make you vehicle look its best. Schedule an appointment and let us show you why we are the best detail shop in the greater Los Angeles area.`,
     author: `Apkomatic`
   },

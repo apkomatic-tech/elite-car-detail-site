@@ -8,7 +8,7 @@ import HeroServices from '../components/home/HeroServices';
 const IndexPage = () => (
   <Layout isLandingPage>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <HeroSplash title="Elite Motocar Detail" text="Professional, High-Quality, and Affordable Car Detail Service." />
+    <HeroSplash title="Elite Detail Shop" />
     <ContactCallout />
     <HeroServices />
   </Layout>
